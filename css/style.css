@@ -1,0 +1,510 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    
+}
+.col{
+ width: 33.33%;
+
+}
+.row div:first-child{
+    
+}
+.row div:nth-child(2){
+    
+}
+.row div:last-child{
+}
+
+
+.row div > img{
+   /* width:98%;*/
+    height:60%;
+}
+ .row div > p{
+     font-size: 16%;
+
+ }
+ .row div h5> span{
+text-align: right;
+font-size: 18%;
+color:black
+ }
+
+
+/****************************************
+Navigation 
+***************************************/
+
+.navbar {
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color:bisque;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width:100px
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: bisque;
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+/****************************************
+Header 
+***************************************/
+header{
+    background-image: url('../images/LandscapePhotography/landscape5.jpg');
+    height: 200px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+
+}
+/****************************************
+index
+***************************************/
+.index{
+    display: flex;
+    flex-direction: column;
+}
+.index h3{
+    font-family: 'Lato', sans-serif;
+    color:bisque;
+    padding: 10px 0 ;
+    text-align: center;
+
+}
+.about{
+ 
+}
+
+.text{
+    color: bisque;
+    padding: 10px;
+    text-align:center
+    
+}
+.about-img{
+    
+ 
+}
+
+.time{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.about-text{
+ color: bisque;
+ padding: 10px;
+
+}
+.club{
+   /* width: 70%;height: 1000x;*/
+	font-size:18px;
+    text-align: center;
+	font-family:'Lato', sans-serif;
+    color: bisque;
+}
+
+.container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%
+    }
+
+
+/****************************************
+contact
+***************************************/
+.contact{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.form{
+width: 100%;
+display: flex;
+justify-content: center;
+}
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    margin: 30px 0;
+}
+label{
+    padding:10px;
+}
+input{
+padding:10px;
+border-top: 1px solid lightgrey;
+border-left: unset;
+border-right: unset;
+border-bottom:unset ;
+
+}
+textarea{
+margin-top: 10px;
+border: unset;
+
+}
+.submit{
+background:rgb(199, 196, 196);
+color: white;
+border: unset;
+}
+.map{
+width: 100%;
+}
+
+
+
+/****************************************
+footer
+***************************************/
+footer{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.social{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+padding: 30px 0;
+border-top: 1px solid white;
+}
+.social > a > i {
+color: bisque;
+font-size: 26px;
+}
+.email{/*
+width: 100%;
+text-align: center;
+color: bisque;
+border-top: 1px solid white;
+padding: 30px 0;*/
+}
+.email p{
+
+}
+.footer-img{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+border-top: 1px solid white;
+}
+.footer-img div{
+    width: 33.333333%;
+}
+/****************************************
+Media Query
+***************************************/
+    .index-text{
+        font-family: 'Lato', sans-serif;
+    }
+
+
+/****************************************
+Navigation for desktop
+***************************************/
+@media screen and (min-width: 991px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+    
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+        width: 70px;
+    }
+    .time{
+       height:70%;
+       width:30% ;
+       display: center;
+    }
+
+    .container{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 67%
+
+    }
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+header{
+    background-image: url('../images/LandscapePhotography/landscape5.jpg');
+   
+
+}
+.index{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+.about{
+ /*padding-bottom: 20px;
+ border-bottom: 1px solid bisque;
+ margin-bottom: 20px;*/
+ 
+
+}
+.about-img{
+    
+}
+.about-text{
+ color: bisque;
+ padding: 10px ;
+}
+
+.contact{
+flex-direction: column;
+display:flex;
+text-align: center;
+}
+.map{
+
+}
+.form{
+
+}
+footer{
+    flex-direction: row;
+    border-top: 1px solid white;
+}
+.social{
+border-top: unset;
+}
+.social > a > i {
+
+}
+
+.row div > img{
+    width:98%;
+    height:250px;
+}
+ .row div > p{
+     font-size: 16%;
+
+ }
+ .row div h5> span{
+text-align: right;
+font-size: 18%;
+color:black
+ }
+
+
+
+/********************************
+jquery Gallery
+*******************************/
+.gallery-header{
+
+    font-family: 'Lato', sans-serif;
+    color: bisque;
+    padding: 10px 0;
+    text-align: center
+
+
+    /*font-family: 'Lato', sans-serif;
+    color:bisque;
+    text-align: center;
+    padding:4% 0 ;
+    font-size: 8vw;
+    text-transform: lowercase;
+    border-top: 4px double white;
+    border-bottom: 4px double white;
+    margin: 2% auto;
+    width: 50%;*/
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.gallery > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.modal > div {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.modal > div > p{
+    padding: 3%;
+    text-align: center;
+
+}
+.modal > div > img{
+    width: 50%;
+    margin: 0 auto;
+}
+.fa-times-circle{
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    font-size: 30px;
+    color:bisque;
+    cursor: pointer;
+}
+.hover {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+@media (min-width: 767px) {
+    .gallery > div {
+        width: 33%;
+    }
+    .gallery-header{
+       font-size: 40px; 
+       padding: 10px;
+    }
+
+     
+
+}
+
+
+  
+.index{
+    display: flex;
+    flex-direction: column;
+}
+.index h3{
+font-family: 'Lato', sans-serif;
+color:bisque;
+padding: 10px 0 ;
+text-align: center;
+
+}
+.about{
+display: flex; 
+padding: 10px;
+justify-content: center;
+align-items: center;
+}
+.about-img{
+ width: 60%;
+}
+.about-text{
+ width: 55%
+}
+
+
+@media (min-width: 991px) {
+    .gallery > div {
+        width: 25%;
+    }
+    .gallery-header{
+        width: 210px;
+    }
+}
